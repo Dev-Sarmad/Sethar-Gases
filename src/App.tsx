@@ -1,8 +1,10 @@
+import Home from "./pages/Home"
+
 function App() {
 
   return (
    <>
-   <h1 className="font-bold">start</h1>
+   <Home />
    </>
   )
 }
