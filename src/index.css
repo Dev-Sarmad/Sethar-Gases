@@ -135,3 +135,8 @@
     @apply bg-background text-foreground;
   }
 }
+@layer components{
+  .container {
+    @apply mx-auto max-w-7xl px-6 py-4
+  }
+}
