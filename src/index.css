@@ -3,12 +3,7 @@
 
 @custom-variant dark (&:is(.dark *));
 :root {
-  .inter-<uniquifier> {
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-}
+  
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
@@ -133,6 +128,13 @@
   }
   body {
     @apply bg-background text-foreground;
+    
+  }
+  h1{
+    font-family: "Formula Condensed", serif;
+  }
+  p {
+    font-family: "PP Neue Montreal Book",serif;
   }
 }
 @layer components{
