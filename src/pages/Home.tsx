@@ -9,10 +9,13 @@ export default function Home() {
       <div className="relative container mx-auto px-6 md:py-10 flex flex-col items-center text-center">
         <div className="max-w-2xl ">
           <h1 className="text-4xl md:text-7xl font-bold leading-tight text-center">
-            From Kitchen <span className="text-[#F54E26] cursor-pointer">Flames</span>
+            From Kitchen{" "}
+            <span className="text-[#F54E26] cursor-pointer">Flames</span>
             <span className="block">
               to Factory{" "}
-              <span className="text-[#007656] block md:inline cursor-pointer">Floors</span>
+              <span className="text-[#007656] block md:inline cursor-pointer">
+                Floors
+              </span>
             </span>
           </h1>
           <p className="mt-5 text-lg text-slate-300">
@@ -36,7 +39,12 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <Velocity />
+      <div className="relative w-full h-20 mt-10">
+        <div className="absolute inset-0 bg-[#009e74] skew-y-6 z-0" />
+        <div className="relative z-10">
+          <Velocity />
+        </div>
+      </div>
     </section>
   );
 }
