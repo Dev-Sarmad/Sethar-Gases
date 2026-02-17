@@ -1,18 +1,18 @@
-import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import Velocity from "@/components/Velocity";
 
 export default function Home() {
   return (
     <section className="container relative w-full text-white overflow-hidden">
       <div className="absolute inset-0" />
 
-      <div className="relative container mx-auto px-6 py-24 flex flex-col items-center text-center">
+      <div className="relative container mx-auto px-6 md:py-10 flex flex-col items-center text-center">
         <div className="max-w-2xl ">
           <h1 className="text-4xl md:text-7xl font-bold leading-tight text-center">
-            From Kitchen <span className="text-[#F54E26]">Flames</span>
+            From Kitchen <span className="text-[#F54E26] cursor-pointer">Flames</span>
             <span className="block">
               to Factory{" "}
-              <span className="text-[#007656] block md:inline ">Floors</span>
+              <span className="text-[#007656] block md:inline cursor-pointer">Floors</span>
             </span>
           </h1>
           <p className="mt-5 text-lg text-slate-300">
@@ -36,6 +36,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <Velocity />
     </section>
   );
 }
