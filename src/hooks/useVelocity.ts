@@ -3,8 +3,8 @@ import { useState } from "react";
 import type { RefObject } from "react";
 type UseVelocityProps<T extends HTMLElement> = {
   containerRef: RefObject<T | null>;
-  baseSpeed?: number;
-  direction?: 1 | -1;
+  baseSpeed: number;
+  direction: 1 | -1;
   initialMultiplier?: number;
 };
 
@@ -16,8 +16,8 @@ type UseVelocityReturn = {
 
 const useVelocity = <T extends HTMLElement>({
   containerRef,
-  baseSpeed = 100,
-  direction = -1,
+  baseSpeed,
+  direction,
   initialMultiplier = 1,
 }: UseVelocityProps<T>): UseVelocityReturn => {
   const x = useMotionValue(0);

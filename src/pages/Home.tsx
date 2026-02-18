@@ -1,3 +1,4 @@
+import CTA from "@/components/CTA";
 import { Button } from "@/components/ui/button";
 import Velocity from "@/components/Velocity";
 
@@ -45,6 +46,7 @@ export default function Home() {
           <Velocity />
         </div>
       </div>
+      <CTA />
     </section>
   );
 }

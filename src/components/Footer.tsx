@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { Separator } from "@/components/ui/separator";
 import { Facebook, Linkedin, Twitter } from "lucide-react";
-
+import getPakistanTime from "@/constants/date";
 export default function Footer() {
   return (
     <footer className=" bottom-0 w-full ">
@@ -41,6 +41,7 @@ export default function Footer() {
               <Link to="/contact">Contact</Link>
             </nav>
           </div>
+          <div>{`its ${getPakistanTime()} here in Pakistan `}</div>
         </div>
 
         <Separator className="my-8" />

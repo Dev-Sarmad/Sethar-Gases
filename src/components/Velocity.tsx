@@ -6,7 +6,7 @@ export default function Velocity() {
   const containerRef = useRef<HTMLDivElement>(null);
   const { x, setSpeedMultiplier } = useVelocity({
     containerRef,
-    baseSpeed: 120,
+    baseSpeed: 100,
     direction: -1,
   });
 
@@ -19,18 +19,18 @@ export default function Velocity() {
       >
         <motion.div ref={containerRef} style={{ x }} className=" flex w-max">
           <ul className="flex gap-10 text-2xl md:text-4xl font-bold items-center h-20">
-            <li className="hover:text-[#F54E26]">Reliable</li>
-            <li className="hover:text-[#F54E26]">Professional</li>
-            <li className="hover:text-[#F54E26]">Safe</li>
-            <li className="hover:text-[#F54E26]">Fast</li>
-            <li className="hover:text-[#F54E26]">Industry-grade</li>
+            <li className="hover:text-[#009e74]">Reliable</li>
+            <li className="hover:text-[#009e74]">Professional</li>
+            <li className="hover:text-[#009e74]">Safe</li>
+            <li className="hover:text-[#009e74]">Fast</li>
+            <li className="hover:text-[#009e74]">Industry-grade</li>
           </ul>
           <ul className="flex gap-10 text-2xl md:text-4xl font-bold items-center h-20">
-            <li className="hover:text-[#F54E26]">dsdasd</li>
-            <li className="hover:text-[#F54E26]">dfdsfjds</li>
-            <li className="hover:text-[#F54E26]">dfjsdk</li>
-            <li className="hover:text-[#F54E26]">idfidfoidsh</li>
-            <li className="hover:text-[#F54E26]">iwsnx,mc-grade</li>
+            <li className="hover:text-[#009e74]">Quick</li>
+            <li className="hover:text-[#009e74]">Supply</li>
+            <li className="hover:text-[#009e74]">Home</li>
+            <li className="hover:text-[#009e74]">SMES</li>
+            <li className="hover:text-[#009e74]">Restaurants</li>
           </ul>
         </motion.div>
       </div>
