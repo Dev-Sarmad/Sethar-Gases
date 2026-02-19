@@ -40,7 +40,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="relative w-full h-20 mt-10">
+      <div className="relative w-full h-20 mt-20">
         <div className="absolute inset-0 bg-[#009e74] skew-y-6 z-0" />
         <div className="relative z-10">
           <Velocity />
