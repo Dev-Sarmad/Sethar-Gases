@@ -1,21 +1,24 @@
+import { AccordionComponent } from "@/components/Accordion";
 import CTA from "@/components/CTA";
+import Socials from "@/components/Socials";
 import { Button } from "@/components/ui/button";
 import Velocity from "@/components/Velocity";
 
 export default function Home() {
   return (
-    <section className="container relative w-full text-white overflow-hidden">
+    <>
+        <section className="container relative w-full text-white overflow-hidden">
       <div className="absolute inset-0" />
 
       <div className="relative container mx-auto px-6 md:py-10 flex flex-col items-center text-center">
         <div className="max-w-2xl ">
           <h1 className="text-4xl md:text-7xl font-bold leading-tight text-center">
             From Kitchen{" "}
-            <span className="text-[#F54E26] cursor-pointer">Flames</span>
+            <span className="text-[#F54E26] cursor-pointer">Flames,</span>
             <span className="block">
               to Factory{" "}
               <span className="text-[#007656] block md:inline cursor-pointer">
-                Floors
+                Floors.
               </span>
             </span>
           </h1>
@@ -48,5 +51,9 @@ export default function Home() {
       </div>
       <CTA />
     </section>
+    <Socials />
+    <AccordionComponent />
+    </>
+
   );
 }
