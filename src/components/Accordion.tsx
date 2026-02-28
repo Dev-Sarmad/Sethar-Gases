@@ -7,6 +7,8 @@ import {
 
 export function AccordionComponent() {
   return (
+    <>
+    <div className="container mt-10"> <h1 className=" text-center text-4xl md:text-5xl">FAQ</h1>
     <Accordion
   type="single"
   collapsible
@@ -58,5 +60,7 @@ export function AccordionComponent() {
     </AccordionContent>
   </AccordionItem>
 </Accordion>
+</div>
+</>
   )
 }

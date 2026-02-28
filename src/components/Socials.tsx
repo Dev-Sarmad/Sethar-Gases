@@ -3,7 +3,7 @@ import { motion } from "motion/react";
 function Socials() {
   return (
     <div className="container mt-20">
-      <h1 className="text-center text-2xl">
+      <h1 className="text-center text-2xl md:text-4xl font-bold ">
         We are mostly active on{" "}
         <span className="text-blue-500 md:hidden">Facebook</span>
         <motion.img
