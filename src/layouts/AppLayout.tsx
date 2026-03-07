@@ -7,11 +7,15 @@ const AppLayout = () => {
   return (
     <>
       <TooltipProvider>
-        <Navbar />
-        <main>
-          <Outlet />
-        </main>
-        <Footer />
+        <div className="flex min-h-screen flex-col">
+          <Navbar />
+
+          <main className="flex-1">
+            <Outlet />
+          </main>
+
+          <Footer />
+        </div>
       </TooltipProvider>
     </>
   );
