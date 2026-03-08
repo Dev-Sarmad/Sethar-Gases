@@ -1,7 +1,10 @@
+import { ContactForm } from "@/components/forms/ContactForm"
 
 function ContactUs() {
   return (
-    <div>ContactUs</div>
+    <div>
+      <ContactForm />
+    </div>
   )
 }
 
