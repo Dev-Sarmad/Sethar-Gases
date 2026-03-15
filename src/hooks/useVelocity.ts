@@ -24,7 +24,7 @@ const useVelocity = <T extends HTMLElement>({
   const [speedMultiplier, setSpeedMultiplier] =
     useState<number>(initialMultiplier);
 
-  useAnimationFrame((time, delta) => {
+  useAnimationFrame((_time, delta) => {
     const containerWidth = containerRef?.current?.scrollWidth
       ? containerRef.current.scrollWidth / 2
       : 0;
